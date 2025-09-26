@@ -1,4 +1,4 @@
-// src/data/questions.jslibertario
+
 export const descriptions = {
   capitalista: "O Capitalismo é um sistema focado na propriedade privada e no livre mercado. Acredita que a competição e a busca pelo lucro são os motores da inovação e da prosperidade. O papel do Estado deve ser mínimo, agindo como um 'árbitro' para proteger a propriedade e os contratos, sem interferir na economia.",
 
@@ -10,6 +10,7 @@ export const descriptions = {
 
   libertario: "O Libertarianismo tem a liberdade individual como seu valor supremo. Baseia-se no princípio da não-agressão, defendendo que todas as interações devem ser voluntárias. Propõe um Estado mínimo ou inexistente, pois vê os impostos como roubo e as regulações como violações da liberdade. Acredita que o mercado livre e a caridade voluntária são as formas mais éticas e eficientes de organizar a sociedade."
 };
+
 export const allQuestions = [
     // --- Bloco de Perguntas Fundamentais ---
     {
