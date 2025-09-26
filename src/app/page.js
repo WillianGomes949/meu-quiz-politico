@@ -36,7 +36,7 @@ export default function Home() {
     if (sortedScores.length === 0)
       return {
         title: "Nenhuma resposta registrada.",
-        description:
+        descriptions:
           "Por favor, responda algumas perguntas para ver seu perfil.",
       };
 
@@ -55,7 +55,7 @@ export default function Home() {
       const winnerNames = winners.map((w) => formatName(w[0])).join(" e ");
       return {
         title: `Você tem um perfil misto: ${winnerNames}`,
-        description:
+        descriptions:
           "Seu resultado foi um empate. Leia as descrições das ideologias com as quais você mais pontuou para entender melhor suas afinidades!",
       };
     }
@@ -63,7 +63,7 @@ export default function Home() {
     const winnerKey = sortedScores[0][0];
     return {
       title: `Seu perfil pende mais para: ${formatName(winnerKey)}`,
-      description: descriptions[winnerKey],
+      descriptions: descriptions[winnerKey],
     };
   }, [scores, showResults]);
 
