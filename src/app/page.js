@@ -92,11 +92,11 @@ export default function Home() {
   const handleFinishQuiz = () => {
     // Inicializa o placar zerado
     let finalScores = {
-      Capitalista: 0,
-      Socialista: 0,
-      Comunista: 0,
-      Democrata: 0,
-      Libertário: 0,
+      capitalista: 0,
+      socialista: 0,
+      comunista: 0,
+      democrata: 0,
+      libertario: 0,
     };
 
     // Itera sobre as respostas do usuário e calcula os pontos
@@ -133,8 +133,8 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gray-900 text-white p-4 sm:p-8">
-           <div className="w-full max-w-2xl bg-gray-800 rounded-xl shadow-lg p-6 sm:p-8 text-center flex flex-col justify-between min-h-[500px]">
-            <h1 className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-6">
+      <div className="w-full max-w-2xl bg-gray-800 rounded-xl shadow-lg p-6 sm:p-8 text-center flex flex-col justify-between min-h-[500px]">
+        <h1 className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-6">
           Quiz Político: Você é...
         </h1>
         {showResults ? (
@@ -150,27 +150,27 @@ export default function Home() {
               <ul className="list-inside list-disc">
                 <li className="text-lg">
                   Capitalista:{" "}
-                  <span className="font-bold">{scores.Capitalista || 0}</span>{" "}
+                  <span className="font-bold">{scores.capitalista || 0}</span>{" "}
                   pontos
                 </li>
                 <li className="text-lg">
                   Socialista:{" "}
-                  <span className="font-bold">{scores.Socialista || 0}</span>{" "}
+                  <span className="font-bold">{scores.socialista || 0}</span>{" "}
                   pontos
                 </li>
                 <li className="text-lg">
                   Comunista:{" "}
-                  <span className="font-bold">{scores.Comunista || 0}</span>{" "}
+                  <span className="font-bold">{scores.comunista || 0}</span>{" "}
                   pontos
                 </li>
                 <li className="text-lg">
-                  Social Democrata:{" "}
-                  <span className="font-bold">{scores.Democrata || 0}</span>{" "}
+                  Social democrata:{" "}
+                  <span className="font-bold">{scores.democrata || 0}</span>{" "}
                   pontos
                 </li>
                 <li className="text-lg">
-                  Libertário:{" "}
-                  <span className="font-bold">{scores.Libertário || 0}</span>{" "}
+                  Libertario:{" "}
+                  <span className="font-bold">{scores.libertario || 0}</span>{" "}
                   pontos
                 </li>
               </ul>
@@ -180,7 +180,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-2 text-cyan-300">
                 Descrição
               </h3>
-              <p className="text-gray-300">{resultInfo.description}</p>
+              <p className="text-gray-300">{resultInfo.descriptions}</p>
             </div>
 
             <button
